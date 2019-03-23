@@ -1,8 +1,12 @@
+<!--
+https://pypi.org/project/readme-generator/
+-->
+
 [![](https://img.shields.io/pypi/pyversions/github-repos.svg?longCache=True)](https://pypi.org/project/github-repos/)
 [![](https://img.shields.io/pypi/v/github-repos.svg?maxAge=3600)](https://pypi.org/project/github-repos/)
 [![Travis](https://api.travis-ci.org/looking-for-a-job/github-repos.py.svg?branch=master)](https://travis-ci.org/looking-for-a-job/github-repos.py/)
 
-#### Install
+#### Installation
 ```bash
 $ [sudo] pip install github-repos
 ```
@@ -15,12 +19,12 @@ bash|python
 #### Functions
 function|`__doc__`
 -|-
-`github_repos.repos(login=None)`|return list of user repos
+`github_repos.repos(login=None)` |return a list of user repos
 
 #### CLI
 usage|`__doc__`
 -|-
-`python -m github_repos [login]`|print user repos
+`python -m github_repos [login]` |print user repos
 
 #### Examples
 delete orphaned repos (if basename = repo name)
@@ -30,4 +34,6 @@ $ cd ~/git/owner
 $ python -m github_repos | awk -F '/' '{print $2}' | grep -v -iF "$(ls -1)" | xargs python -m github_delete
 ```
 
-<p align="center"><a href="https://pypi.org/project/readme-md/">readme-md</a> - README.md generator</p>
+<p align="center">
+    <a href="https://pypi.org/project/readme-generator/">readme-generator</a>
+</p>
