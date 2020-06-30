@@ -1,10 +1,10 @@
-#!/usr/bin/env python
+__all__ = ['repos']
+
+
 import github
 import os
-import public
 
 
-@public.add
 def repos(login=None):
     """return a list of user repos"""
     fullnames = []
